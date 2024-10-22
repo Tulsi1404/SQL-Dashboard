@@ -1,8 +1,6 @@
-/*	Question Set 1 - Easy */
-
 /* Q1: Who is the senior most employee based on job title? */
 
-SELECT title, last_name, first_name 
+SELECT 
 FROM employee
 ORDER BY levels DESC
 LIMIT 1
@@ -42,12 +40,7 @@ FROM customer
 JOIN invoice ON customer.customer_id = invoice.customer_id
 GROUP BY customer.customer_id
 ORDER BY total_spending DESC
-LIMIT 1;
-
-
-
-
-/* Question Set 2 - Moderate */
+LIMIT 1
 
 /* Q1: Write query to return the email, first name, last name, & Genre of all Rock Music listeners. 
 Return your list ordered alphabetically by email starting with A. */
@@ -222,9 +215,4 @@ FROM customter_with_country cc
 JOIN country_max_spending ms
 ON cc.billing_country = ms.billing_country
 WHERE cc.total_spending = ms.max_spending
-ORDER BY 1;
-
-
-/* source: www.youtube.com/@RishabhMishraOfficial */
-
-/* Thank You :) */
+ORDER 1;
